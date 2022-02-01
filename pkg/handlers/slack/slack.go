@@ -23,9 +23,9 @@ import (
 
 	"github.com/nlopes/slack"
 
-	"github.com/bitnami-labs/kubewatch/config"
-	"github.com/bitnami-labs/kubewatch/pkg/event"
-	kbEvent "github.com/bitnami-labs/kubewatch/pkg/event"
+	"github.com/mudasirmirza/kubewatch/config"
+	"github.com/mudasirmirza/kubewatch/pkg/event"
+	kbEvent "github.com/mudasirmirza/kubewatch/pkg/event"
 )
 
 var slackColors = map[string]string{
@@ -52,7 +52,7 @@ Command line flags will override environment variables
 type Slack struct {
 	Token   string
 	Channel string
-	Title string
+	Title   string
 }
 
 // Init prepares slack configuration

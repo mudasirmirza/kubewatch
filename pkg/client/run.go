@@ -19,15 +19,15 @@ package client
 import (
 	"log"
 
-	"github.com/bitnami-labs/kubewatch/config"
-	"github.com/bitnami-labs/kubewatch/pkg/controller"
-	"github.com/bitnami-labs/kubewatch/pkg/handlers"
-	"github.com/bitnami-labs/kubewatch/pkg/handlers/flock"
-	"github.com/bitnami-labs/kubewatch/pkg/handlers/hipchat"
-	"github.com/bitnami-labs/kubewatch/pkg/handlers/mattermost"
-	"github.com/bitnami-labs/kubewatch/pkg/handlers/msteam"
-	"github.com/bitnami-labs/kubewatch/pkg/handlers/slack"
-	"github.com/bitnami-labs/kubewatch/pkg/handlers/webhook"
+	"github.com/mudasirmirza/kubewatch/config"
+	"github.com/mudasirmirza/kubewatch/pkg/controller"
+	"github.com/mudasirmirza/kubewatch/pkg/handlers"
+	"github.com/mudasirmirza/kubewatch/pkg/handlers/flock"
+	"github.com/mudasirmirza/kubewatch/pkg/handlers/hipchat"
+	"github.com/mudasirmirza/kubewatch/pkg/handlers/mattermost"
+	"github.com/mudasirmirza/kubewatch/pkg/handlers/msteam"
+	"github.com/mudasirmirza/kubewatch/pkg/handlers/slack"
+	"github.com/mudasirmirza/kubewatch/pkg/handlers/webhook"
 )
 
 // Run runs the event loop processing with given handler

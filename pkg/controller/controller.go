@@ -25,10 +25,10 @@ import (
 	"time"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/bitnami-labs/kubewatch/config"
-	"github.com/bitnami-labs/kubewatch/pkg/event"
-	"github.com/bitnami-labs/kubewatch/pkg/handlers"
-	"github.com/bitnami-labs/kubewatch/pkg/utils"
+	"github.com/mudasirmirza/kubewatch/config"
+	"github.com/mudasirmirza/kubewatch/pkg/event"
+	"github.com/mudasirmirza/kubewatch/pkg/handlers"
+	"github.com/mudasirmirza/kubewatch/pkg/utils"
 
 	apps_v1beta1 "k8s.io/api/apps/v1beta1"
 	batch_v1 "k8s.io/api/batch/v1"
@@ -49,7 +49,7 @@ const maxRetries = 5
 
 var serverStartTime time.Time
 
-// Maps for holding events config 
+// Maps for holding events config
 var global map[string]uint8
 var create map[string]uint8
 var delete map[string]uint8

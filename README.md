@@ -1,6 +1,6 @@
 # Kubewatch
 
-[![Build Status](https://travis-ci.org/bitnami-labs/kubewatch.svg?branch=master)](https://travis-ci.org/bitnami-labs/kubewatch) [![Go Report Card](https://goreportcard.com/badge/github.com/bitnami-labs/kubewatch)](https://goreportcard.com/report/github.com/bitnami-labs/kubewatch) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/bitnami-labs/kubewatch/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/bitnami-labs/kubewatch.svg?branch=master)](https://travis-ci.org/bitnami-labs/kubewatch) [![Go Report Card](https://goreportcard.com/badge/github.com/mudasirmirza/kubewatch)](https://goreportcard.com/report/github.com/mudasirmirza/kubewatch) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/mudasirmirza/kubewatch/blob/master/LICENSE)
 
 **kubewatch** is a Kubernetes watcher that currently publishes notification to available collaboration hubs/notification channels. Run it in your k8s cluster, and you will get event notifications through webhooks.
 
@@ -75,9 +75,9 @@ $ helm upgrade --install kubewatch stable/kubewatch --values=values-file.yml
 
 #### Using kubectl:
 
-In order to run kubewatch in a Kubernetes cluster quickly, the easiest way is for you to create a [ConfigMap](https://github.com/bitnami-labs/kubewatch/blob/master/kubewatch-configmap.yaml) to hold kubewatch configuration.
+In order to run kubewatch in a Kubernetes cluster quickly, the easiest way is for you to create a [ConfigMap](https://github.com/mudasirmirza/kubewatch/blob/master/kubewatch-configmap.yaml) to hold kubewatch configuration.
 
-An example is provided at [`kubewatch-configmap.yaml`](https://github.com/bitnami-labs/kubewatch/blob/master/kubewatch-configmap.yaml), do not forget to update your own slack channel and token parameters. Alternatively, you could use secrets.
+An example is provided at [`kubewatch-configmap.yaml`](https://github.com/mudasirmirza/kubewatch/blob/master/kubewatch-configmap.yaml), do not forget to update your own slack channel and token parameters. Alternatively, you could use secrets.
 
 Create k8s configmap:
 
@@ -85,7 +85,7 @@ Create k8s configmap:
 $ kubectl create -f kubewatch-configmap.yaml
 ```
 
-Create the [Pod](https://github.com/bitnami-labs/kubewatch/blob/master/kubewatch.yaml) directly, or create your own deployment:
+Create the [Pod](https://github.com/mudasirmirza/kubewatch/blob/master/kubewatch.yaml) directly, or create your own deployment:
 
 ```console
 $ kubectl create -f kubewatch.yaml
@@ -143,7 +143,7 @@ $ kubectl create -f kubewatch.yaml
 
 ```console
 # Download and install kubewatch
-$ go get -u github.com/bitnami-labs/kubewatch
+$ go get -u github.com/mudasirmirza/kubewatch
 
 # Configure the notification channel 
 $ kubewatch config add slack --channel <slack_channel> --token <slack_token>
@@ -410,7 +410,7 @@ Clone the repository into your $GOPATH and then build it.
 ```
 $ mkdir -p $GOPATH/src/github.com/bitnami-labs/
 $ cd $GOPATH/src/github.com/bitnami-labs/
-$ git clone https://github.com/bitnami-labs/kubewatch.git
+$ git clone https://github.com/mudasirmirza/kubewatch.git
 $ cd kubewatch
 $ go build -o kubewatch main.go
 ```
